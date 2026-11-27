@@ -1,0 +1,23 @@
+/* GR8 · 40 minutes vs 3 hours */
+.compare { padding: clamp(88px, 12vh, 140px) 0; background: var(--wash); }
+.compare-title { font-size: clamp(40px, 5.4vw, 80px); letter-spacing: -.05em; text-wrap: balance; }
+.compare-title em { color: var(--teal-deep); }
+.cblocks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: clamp(32px, 5vh, 56px); }
+.cblock { min-height: clamp(320px, 46vh, 460px); border-radius: 28px; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; }
+.cblock.reveal:nth-child(2) { transition-delay: .12s; }
+.cblock.reveal:nth-child(3) { transition-delay: .24s; }
+.cblock.was { background: #e6e9ef; color: var(--muted); }
+.cblock.am { background: var(--teal-deep); color: #fff; }
+.cblock.pm { background: var(--orange); color: var(--navy-deep); }
+.cwho { font-family: var(--display); font-size: 14px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.cbig { margin-top: auto; font-family: var(--display); font-weight: 700; font-size: clamp(56px, 6.6vw, 104px); letter-spacing: -.055em; line-height: .92; }
+.cblock.was .cbig { color: #4a5368; }
+.cblock.pm .cbig { font-size: clamp(44px, 4.4vw, 68px); }
+.cline { margin-top: 14px; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.35; max-width: 22ch; }
+.cblock.was .cline { color: #4a5368; }
+@media (max-width: 860px) {
+  .cblocks { grid-template-columns: 1fr; gap: 10px; }
+  .cblock { min-height: 220px; border-radius: 22px; padding: 22px; }
+  .cbig { font-size: clamp(52px, 16vw, 76px); }
+  .cblock.pm .cbig { font-size: clamp(40px, 11vw, 56px); }
+}

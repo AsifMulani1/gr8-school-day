@@ -61,8 +61,8 @@
 }
 .dsubs { position: relative; z-index: 1; font-size: 13px; opacity: .8; margin-top: 6px; line-height: 1.35; }
 @media (min-width: 861px) {
-  .dblock { padding-bottom: 84px; }
-  .dblock > .dsubs { position: absolute; left: 26px; right: 20px; bottom: 22px; margin: 0; }
+  .dblock { padding-bottom: 132px; }
+  .dblock > .dsubs { position: absolute; z-index: 1; left: 26px; right: 20px; bottom: 22px; margin: 0; }
 }
 @media (max-width: 860px) { .shero-line em.real { max-width: 15ch; } }
 
@@ -77,3 +77,4 @@
   .dbeyond-list { justify-content: flex-start; }
   .dbeyond-list li { padding: 10px 16px; }
 }
+.dwith { font-size: 15px; opacity: 1; font-weight: 500; margin-bottom: 4px; }

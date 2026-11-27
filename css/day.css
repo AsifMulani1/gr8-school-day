@@ -61,7 +61,7 @@
 }
 .dsubs { position: relative; z-index: 1; font-size: 13px; opacity: .8; margin-top: 6px; line-height: 1.35; }
 @media (min-width: 861px) {
-  .dblock { padding-bottom: 64px; }
+  .dblock { padding-bottom: 84px; }
   .dblock > .dsubs { position: absolute; left: 26px; right: 20px; bottom: 22px; margin: 0; }
 }
 @media (max-width: 860px) { .shero-line em.real { max-width: 15ch; } }

@@ -21,3 +21,11 @@
   .cbig { font-size: clamp(52px, 16vw, 76px); }
   .cblock.pm .cbig { font-size: clamp(40px, 11vw, 56px); }
 }
+/* The afternoon block shows a real afternoon: one question, worked on in the lab */
+.cblock.real { position: relative; overflow: hidden; color: #fff; }
+.cblock.real img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cblock.real::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(90, 42, 4, .2) 0, rgba(90, 42, 4, .1) 22%, rgba(90, 42, 4, .78) 52%, rgba(80, 36, 4, .95) 100%); }
+.cblock.real > p { position: relative; z-index: 1; }
+.cblock.real .cwho { align-self: flex-start; background: var(--orange); color: var(--navy-deep); padding: 6px 12px; border-radius: 999px; }
+.cblock.real .cbig { font-size: clamp(32px, 2.9vw, 46px); line-height: 1; letter-spacing: -.04em; }
+@media (max-width: 860px) { .cblock.real { min-height: 340px; } .cblock.real .cbig { font-size: clamp(32px, 9vw, 42px); } }

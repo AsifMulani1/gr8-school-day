@@ -65,3 +65,15 @@
   .dblock > .dsubs { position: absolute; left: 26px; right: 20px; bottom: 22px; margin: 0; }
 }
 @media (max-width: 860px) { .shero-line em.real { max-width: 15ch; } }
+
+/* Sixth box: practical skills at home and in the community, outside the school day */
+.dbeyond { margin-top: 12px; border-radius: 26px; padding: 28px 32px; background: #939bc9; color: var(--navy-deep); display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.dbeyond .dwhen { opacity: .8; }
+.dbeyond .dline { white-space: normal; overflow: visible; }
+.dbeyond-list { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+.dbeyond-list li { font-family: var(--display); font-weight: 600; font-size: clamp(16px, 1.5vw, 20px); background: rgba(255, 255, 255, .55); padding: 12px 20px; border-radius: 999px; }
+@media (max-width: 860px) {
+  .dbeyond { flex-direction: column; align-items: flex-start; padding: 22px 20px; border-radius: 20px; gap: 18px; margin-top: 10px; }
+  .dbeyond-list { justify-content: flex-start; }
+  .dbeyond-list li { padding: 10px 16px; }
+}

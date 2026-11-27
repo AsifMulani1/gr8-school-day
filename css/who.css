@@ -36,3 +36,8 @@
   .practice { flex: none; align-self: stretch; }
 }
 .wblock.experts::after { background: linear-gradient(180deg, rgba(13, 22, 51, .05) 20%, rgba(13, 22, 51, .9) 100%); }
+.plegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px; font-size: 12px; color: var(--muted); }
+.plegend li { display: flex; align-items: center; gap: 6px; }
+.plegend li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.plegend .ok::before { background: var(--teal); }
+.plegend .retry::before { background: var(--orange); }
